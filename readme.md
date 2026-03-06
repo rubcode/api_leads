@@ -66,3 +66,9 @@ pip install fastapi uvicorn pydantic email-validator
 ```bash
 uvicorn main:app --reload
 ```
+### La API estará disponible en:
+
+```bash
+http://127.0.0.1:8000
+```
+#📡 Endpoints Disponibles
