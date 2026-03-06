@@ -60,3 +60,9 @@ source venv/bin/activate
 ```bash
 pip install fastapi uvicorn pydantic email-validator
 ```
+
+## 4️⃣ Ejecutar la API
+
+```bash
+uvicorn main:app --reload
+```
