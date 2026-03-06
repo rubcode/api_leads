@@ -70,6 +70,14 @@ uvicorn main:app --reload
 ```bash
 http://127.0.0.1:8000
 ```
+### API en Railaway
+
+La API se monto en el servicio Railaway por lo que usar las url para consumirla 
+
+```bash
+https://leads-api.up.railway.app/leads
+```
+
 # 📡 Endpoints Disponibles
 
 | Método | Endpoint | Descripción             |
@@ -80,6 +88,19 @@ http://127.0.0.1:8000
 
 # 🧪 Ejemplo de Petición
 
+## Local
+```bash
+curl -X POST "https://leads-api.up.railway.app/leads" \
+-H "Content-Type: application/json" \
+-d '{
+  "name": "Juan Pérez",
+  "email": "juan@email.com",
+  "company": "Empresa Demo",
+  "message": "Estoy interesado en sus servicios"
+}'
+```
+
+## Railaway
 ```bash
 curl -X POST "http://127.0.0.1:8000/leads" \
 -H "Content-Type: application/json" \
