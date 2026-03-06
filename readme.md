@@ -35,5 +35,28 @@ El proyecto fue desarrollado utilizando las siguientes tecnologías:
 ```bash
 git clone https://github.com/tu-usuario/leads-api.git
 cd leads-api
-
+```
 ## 2️⃣ Crear entorno virtual
+
+```bash
+python -m venv venv
+```
+
+Activar entorno virtual:
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+### Mac/Linux
+
+```bash
+source venv/bin/activate
+```
+
+## 3️⃣ Instalar dependencias
+
+```bash
+pip install fastapi uvicorn pydantic email-validator
+```
